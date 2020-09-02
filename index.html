@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenclassRoom</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class=" container flex">
+            <img class="header-logo" src="Images/logo.png">
+            <nav>
+                <ul class="nav-flex">
+                    <li><a href="#header">Accueil</a></li>
+                    <li><a href="#main-image">Services</a></li>
+                    <li><a href="#">Portefolio</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="main-image">
+        <div class="container">
+            <div class="slide-content">
+                <div class="slide-texte">
+                    <h1>
+                        <span style="color: #5BA4C6;">WEBAGENCY</span>&nbsp;:
+                        L'AGENCE DE TOUS
+                        <br>VOS PROJETS!
+                    </h1>
+                    <p><span style="font-size: 20px;">Vous avez un projets web? La WebAgency vous aide à le réaliser!
+                    </p></span>
+                    <div class="slide-button">
+                        <a href="#" class="button">Plus d'infos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Services">
+        <div class="container">
+            <div class="container-head">
+                <h2><span style="font-size: 30px;">NOS SERVICES</span></h2>
+                <p>Contactez nous pour votre demande. On s'occupe de tout le reste</p>
+            </div>
+            <div class="undersec_service">
+                <img id="image-pc" src="Images/main-feature.png">
+                <div class="bloc">
+                    <div class="liste-services">
+                        <img class="logo-image" src="images/item01.png" alt="">
+                        <div class="logo-text">
+                            <h2 style="text-align: left;
+                                            margin-bottom: 6px;
+                                            ">UX design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor
+                                incididunt
+                                ut
+                                labore et dolore magna incididunt ut labore aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="liste-services">
+                        <img class="logo-image" src="images/item01.png" alt="">
+                        <div class="logo-text">
+                            <h2 style="text-align: left;
+                                            margin-bottom: 6px;
+                                            ">UX design</h2>
+                            <p><strong>L'UX Designer</strong> (User Experience Designer) pensera votre interface web et
+                                ses outils numériques de manière
+                                à rendre l'expérience utilisateur la plus <strong>agréable</strong> possible.</p>
+                        </div>
+                    </div>
+                    <div class="liste-services">
+                        <img class="logo-image" src="images/item01.png" alt="">
+                        <div class="logo-text">
+                            <h2 style="text-align: left;
+                                            margin-bottom: 6px;
+                                            ">UX design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor
+                                incididunt
+                                ut
+                                labore et dolore magna incididunt ut labore aliqua.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="projets">
+        <div class="container-projet">
+            <div class="projets-header">
+                <h3>NOS PROJETS</h3>
+                <p>Découvrez des projets réalisés<br>par notre Agence Web</p>
+            </div>
+            <div class="projets-menu">
+                <a href="#" class="projets-button">All Works</a>
+                <a href="#" class="projets-button">Creative</a>
+                <a href="#" class="projets-button">Corporate</a>
+                <a href="#" class="projets-button">Portefolio</a>
+            </div>
+            <div class="projets-photo">
+                <img class="photo-size" src="images/portfolio/01.jpg">
+                <img class="photo-size" src="images/portfolio/02.jpg">
+                <img class="photo-size" src="images/portfolio/03.jpg">
+                <img class="photo-size" src="images/portfolio/04.jpg">
+
+            </div>
+
+            <div class="projets-photo1">
+                <img class="photo-size" src="images/portfolio/05.jpg">
+                <img class="photo-size" src="images/portfolio/06.jpg">
+                <img class="photo-size" src="images/portfolio/07.jpg">
+                <img class="photo-size" src="images/portfolio/08.jpg">
+
+            </div>
+        </div>
+        </section">
+
+
+        <footer id="contacte">
+            <div class="fond">
+                <div id="map">
+                    
+                </div>
+                <div class="formulaire">
+                    <h4><strong>Contact Info</strong></h4>
+                    <p>WebAgency SAS<br>25 rue d'Hauteville 75010 Paris<br>Tel:01 02 03 04 05</p>
+                    <form>
+                        <input class="contacte-margin" type="text" name="nom" placeholder="Name">
+                    </form>
+
+                    <form>
+                        <input class="contacte-margin" type="text" name="nom" placeholder="Email">
+                    </form>
+
+                    <form>
+                        <input class="contacte-margin" type="text" name="nom" placeholder="Subject">
+                    </form>
+
+                    <form>
+                        <textarea></textarea>
+                    </form>
+                    <div class="button-size">
+                        <a href="#" class="button1">Send Message</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+        <script>
+            function initMap() {
+                let paris = {
+                    lat: 48.8534,
+                    lng: 2.3488
+                };
+                let map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 11,
+                    center: paris
+                });
+                let marker = new google.maps.Marker({
+                    position: paris,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7KwJq0m9IsR-22xN86xXHOSmf-ljbOe0&callback=initMap">
+        </script>
+</body>
+
+</html>
