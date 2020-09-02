@@ -1,0 +1,61 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*HEADER*/
+#header{
+    background-color: $white;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+}
+.header-logo{
+    width: 261px;
+    height: 57px;  
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.nav-flex{
+    display: flex;
+}
+
+ul li{
+    padding: 20px;
+    a{
+        text-decoration: none;
+        color:$grey;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+
+@media #{$mobile}{
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;    
+    }
+
+    ul li{
+        padding: 10px;
+    }
+    .slide-button{
+        padding-top:5px;
+    }
+}
+
+
+
+
+
+
